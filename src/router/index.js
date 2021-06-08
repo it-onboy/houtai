@@ -19,7 +19,7 @@ const routes = [
         component: () => import('@/views/Classify') //查询分类
       },
       {
-        path:'/classify/add',
+        path:'/classify/add/:id',
         component: () => import('@/views/Classify/add.vue') //添加分类
       },
       {

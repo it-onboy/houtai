@@ -1,20 +1,26 @@
 <template>
-  <div>添加分类 {{$route.params.id}}</div>
+  <div>
+    <el-page-header @back="back" content="添加分类"></el-page-header>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-
-    }
+    return {};
   },
   created() {
     console.log(this.$route.params.id);
-  }
-}
+  },
+  methods: {
+    back() {
+      this.$router.push({
+        path: "/classify",
+      });
+    },
+  },
+};
 </script>
 
 <style>
-
 </style>

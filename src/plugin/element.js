@@ -15,7 +15,8 @@ import {
     TableColumn,
     Form,
     FormItem,
-    Pagination
+    Pagination,
+    PageHeader
     } from "element-ui";
 
 const element = {
@@ -36,6 +37,7 @@ const element = {
         Vue.use(Form)
         Vue.use(FormItem)
         Vue.use(Pagination)
+        Vue.use(PageHeader)
     }
 }
 export default element

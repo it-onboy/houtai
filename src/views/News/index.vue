@@ -25,15 +25,21 @@ export default {
     };
   },
   created() {
-      this.$http.get('http://api.web1024.cn/news/list',{
-          params:{
-              key: "8tk528",
-          }
-      })
-      .then(res => {
-          console.log(res.data.result);
-          this.list = res.data.result.data
-      })
+    this.$http({
+      method:'get'
+    }).then(res=>{
+      console.log(res);
+      this.list = res.result.data
+    })
+      // this.$http.get('http://api.web1024.cn/news/list',{
+      //     params:{
+      //         key: "8tk528",
+      //     }
+      // })
+      // .then(res => {
+      //     console.log(res.data.result);
+      //     this.list = res.data.result.data
+      // })
   },
    methods: {
       tableRowClassName({row, rowIndex}) {

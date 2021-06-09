@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import ElementUI from './plugin/element';
 import 'element-ui/lib/theme-chalk/index.css';
-import http from 'axios'
+import http from './http'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)

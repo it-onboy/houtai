@@ -83,7 +83,7 @@ export default {
     },
     addShop() {
       this.$router.push({
-        path:'/classify/add/' + '1'
+        path:'/classify/add/' + '0'
       })
     }
   }
